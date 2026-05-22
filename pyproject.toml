@@ -1,0 +1,21 @@
+[project]
+name = "aw-import-timely"
+version = "0.1.0"
+description = "Import Timely time entries into ActivityWatch"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "typer>=0.9",
+    "requests>=2.28",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+aw-import-timely = "aw_import_timely:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
