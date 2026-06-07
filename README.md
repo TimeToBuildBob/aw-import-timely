@@ -106,7 +106,7 @@ aw-import-timely import-data --aw-host http://localhost:5600 --yes
 ```sh
 git clone https://github.com/TimeToBuildBob/aw-import-timely.git
 cd aw-import-timely
-uv sync
+uv sync --extra test
 uv run pytest
 ```
 
